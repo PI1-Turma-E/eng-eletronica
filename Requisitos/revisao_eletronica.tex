@@ -1,0 +1,135 @@
+\documentclass[a4paper]{article}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title{Requisitos Eletrônicos - Projeto Integrador 1 - Turma E}
+\author{Tiago Rodrigues Pereira}
+\date{16/09/2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+
+	A tecnologia tem mudado como nós vivemos, trabalhamos e passamos nosso tempo de lazer nos últimos anos. A indústria médica é um dos principais exemplos de como a tecnologia modificou nossas vidas. 
+
+Uma das tecnologias que pode exemplificar essa mudança são os exames que utilizam os aparelhos de ultrassom. A tecnologia de ultrassom pode ser aplicada em muitas áreas da medicina. As principais são na área do abdomen e seus orgãos internos, útero, olhos, sistema vascular, coração, glândula mamária e tireoide. Porém, normalmente, esses exames são limitados a hospitais e clínicas devido a baixa adoção de aparelhos móveis de ultrassom no mercado.
+
+Com intuito de tornar esse utilitário mais acessível a áreas remotas e tornar viável consultas com profissionais especialistas com pacientes de alto risco propomos, neste artigo, a criação de um sistema de telemedicina para ultrasom à distÂncia. Utilizando a internet para comunicação remota esse sistema consiste em um braço mecâtrônico com local em sua extremida para acoplar um transdutor de ultrasom. Sendo movimentado remotamente por um joystick controlado pelo especialista na área médica que está realizando o a consulta médica.
+
+O projeto foi realizado por alunos dos cursos de engenharia aeroespacial, automotiva, eletrônica, energia e de software da Universidade de Brasília e tem o intuito de demonstrar todo o processo analítico na concepção deste aparelho. Além da demonstração de um protótipo de menor escada com intuito de mostrar viabilidade se fosse realizado todo o projeto na escada normal. 
+
+\section{Objetivo}
+
+	O objetivo deste artigo tecnico científico é a projeção de um robô mecatrônico portátil de médio/grande porte capaz de suportar um transdutor de ultrasom sendo controlado e monitorado remotamente por um especialista na área médica. 
+
+Se tratando da área eletrônica serão analisados quatro setores distindos. São eles:
+
+\subparagraph{1:}O setor de controle, ou setor do módulo controlador do sistema principal (onde o especialista da área está), tem como principal critério definir como o braço mecatrônico será controlado para os movimentos rotação, translação, de nível e movimentação esfêrico do transdutor ultrasônico. 
+
+\subparagraph{2:}O setor de transmissão e recepção de dados, que trabalha tanto no sistema principal como no escravo (braço mecatrônico), tem como objetivo identificar os meios de comunicação À longa distância existentes no mercado. De forma a selecionar o que corresponda de maneira mais eficaz ao sistema crítico de controle do mecanismo robótico com o menor tempo possível de atrasos entre o vídeo transmitido e o local de onde partirá o controle para a realização do exame de ultrassom. 
+
+\subparagraph{3:}O setor do transdutor de ultrasom, que trabalha no sistema escravo, tem com objetivo identificar os transdutores ultrasônicos com um sistema de saída de imagens embutido. De forma a selecionar os mais viáveis conforme a necessidade dos exames existentes e respectivos preços finais e necessidades de sistemas adicionais. Além de especificar as saídas e entradas de sinais e energia necessárias para funcionamento sem perdas de funcionalidade do ultrasom.
+
+\subparagraph{4:}Por último o setor eletrônico para o braço mecatrônico, sistema escravo, tem como objetivo identificar e pesquisar todas as tecnologias eletrônicas que envolvem a movimentação de um braço mecânico. Além disso deve 
+definir os componentes necessários para prototipagem final do braço mecânico.
+
+\section{Metodologia}
+
+Para a realização deste projeto deve-se utilizar uma linguagem tecnica científica seguindo as orientações da ABNT quanto a formulação da bibliografia, imagens de estruturas 3D a serem projetadas e estruturação dos relatórios de pesquisa individual de cada integrante. A pesquisa é predominantemente bibliográfica para a posterior descrição o aparelho telemédico com ultrasom como um método e respectivo protótipo. 
+
+Os integrantes da engenharia eletrônica foram distribuidos em quatro àreas relacionadas ao projeto e derão pesquisar os dados abaixo:
+
+\subsection{Módulo controlador - sistema principal}
+
+\begin{enumerate}
+\item Soluções de controle existentes no mercado e respectiva aplicabilidade ao projeto
+\item Definição do controlador para o protótipo
+\item Programação de sinais de movimento para a placa de controle definida para o protótipo
+\item Estimativa de custos energéticos para funcionamento do módulo
+\item Estimativa e métodos para evitar erros em relação a saída dos sinais de controle.
+\end{enumerate}
+
+\subsection{Módulo de transmissão e recebimento de dados de movimento e imagem - transição entre os sistemas}
+
+\begin{enumerate}
+\item Soluções existentes no mercado para transmissão de sinais de controle e imagem
+\item Definição do melhor método de transmissão conforme os requisitos necessários
+\item Busca, se possível, de métodos para compactação, sem perda de qualidade, dos sinais de imagem.
+\item Se necessário, pesquisa sobre confecção de um módulo portatil de transmissão separado para o braço mecânico.
+\end{enumerate}
+
+\subsection{Módulo transdutor ultrasom - sistema escravo}
+
+\begin{enumerate}
+\item Transdutores ultrasônicos comerciais existentes no mercado e especificações
+\item Especificações: Preço, taxa de resolução, funcionamento, especificações energéticas e de temperatura para funcionamento;
+\item Definir como funcionará o acoplamento do transdutor ao braço mecânico
+\end{enumerate}
+
+\subsection{Módulo Eletrônico para o braço mecânico - sistema escravo}
+
+\begin{enumerate}
+\item Funcionamento da parte eletrônica na movimentação de braços robôticos
+\item Funcionamento e listagem de modelos de servomotores, motores de passo e atuadores
+\item Pesquisa e definição do circuito eletrônico de controle que irá controlar todos os motores de movimento eletrônico
+\item Definição dos materiais para realização do protótipo
+\end{enumerate}
+
+
+\section{Desenvolvimento}
+
+\subsection{Módulo controlador - sistema principal}
+
+Primeiramente temos o módulo controlador que possui a funcionalidade enviar os sinais de movimento para o controle do braço mecânico. Sua concepção se baseia em tecnologias mais atuais que utilizam  sensores de movimento espaciais para gerar a movimentação do braço, como acelerometros e giroscopicos. Essa característica tem como objetivo uma realização mais precisa e dinâmica da consulta realizada pelo profissional da saúde, podendo ser realizada com o mínimo de treinamento em relação ao uso do equipamento pois o controle não difere em proporções técnicas de uma consulta de ultrasom local. 
+
+Para o projeto final além desse sistema teremos incluido um manequim modelo que serve como orientação para o especialista de saúde. A funcionalidade do manequim é calibrar o chip de captura dos movimentos com o robô antes da consulta visto que a estruturação corporal é especifica para cada paciente. 
+
+Para capturar a movimentação do especialista utilizaremos um chip sensor InvenSense MPU-9255. Ela possui um acelerometro, giroscópio e magnetometer (compasso) MEMS integrado a um único chip. Além disso possui um conversor analógico digital de 16 bits e pode capturar os 3 eixos de orientação x, y e z e a compasso (3 eixos) do chip. Essa placa usa o I2C-bus para interface com o Arduino, e seu custo é baixo.
+
+\subsection{Módulo de transmissão e recebimento de dados de movimento e imagem - transição entre os sistemas}
+
+Foram pensadas três formas de abordar formas de comunicação entre a base controladora e a unidade de exame: 
+
+\begin{enumerate}
+\item[a)] \textbf{Internet móvel 4G:} A internet 4G é um aprimoramento (4ª geração) da telefonia móvel que funciona com a tecnologia LTE (Long Term Evolution), baseada nas tecnologias de comunicação WCDMA e GSM, voltada para dados de internet. Essa nova tecnologia possui vantagens como eficiência espectral (maior volume do tráfego de dados),  redução de latência (razão entre os tempos de envio e recebimento dos dados), melhoria de cobertura e redução de custos. Em alguns testes realizados, a velocidade 4G tem em média 100Mbps de download e 50Mbps de upload com uma latência máxima de 30 milissegundos. Apesar dos altos índices de velocidade, esse tipo de comunicação apresenta variações muito altas de velocidade devido ao tráfego de dados pela demanda de usuários, ou seja, quanto mais usuários conectados à rede, mais lenta ela fica. Outro problema encontrado são os pontos de fornecimento que ainda são escassos pelo país, cerca de 28 cidades apenas.
+\item[b)] \textbf{Internet cabeada (fibra ótica)}:  De maneira convencional, os dados enviados (geralmente por fios de cobre) são sinais elétricos enviados através desse cabos. Isso faz com que a internet oferecida por esse meio fique em torno de 10Mbps de download. Na internet de fibra ótica, além da distância (que pode chegar a 80Km), é possível a realização de transferência de dados a 10Gbps, pois o sinais transmitidos passam a ser luz, que são as formas de onda eletromagnéticas mais rápidas existentes. Assim sendo, a transferência de dados atinge tais valores, além de uma latência de cerca de 20ms (dependendo da distância entre transmissor e receptor). Um dos grandes problemas da fibra ótica é o elevado preço, de forma a encarecer o custo com um projeto.
+\item[c)] \textbf{Comunicação de dados via radiofrequência:} A comunicação de dados realizada via radiofrequência se destaca pelo baixo custo de instalação e manutenção e pelas distâncias alcançadas (podendo chegar à 100Km). A comunicação é feita entre antenas e repetidores de sinal que permitem o maior alcance e uma ampla faixa da utilização de banda. Os problemas relacionados à esse tipo de comunicação estão relacionados a estabilidade da comunicação além da baixa velocidade e alta latência, que fazem com que sistemas de controle críticos se tornem inviáveis utilizando esse tipo de tecnologia
+\end{enumerate}
+
+Analisando as três opções acima, a melhor escolha seria uma internet cabeada, de preferência utilizando fibra ótica, pois existe a necessidade de transferência de dados tanto de controle como dados de vídeo (que consomem grande largura de banda da rede), isso tudo visto em um sistema de tempo real crítico. Apesar do elevado preço, a estabilidade e alta taxa de transferência proporcionariam um sistema com confiabilidade suficiente para a realização de exames com o controle necessário do mecanismo aplicado ao paciente. E como a comunicação seria feita inteiramente pela internet, facilitaria a programação pois o protocolo a ser utilizado e a linguagem teriam maior flexibilidade para os programadores responsáveis. 
+
+Para a aplicação em um protótipo para a disciplina, o uso em redes internas (wifi) representaria bem a taxa de transferência requerida para um sistema de controle em tempo real. 
+
+\subsection{Módulo transdutor ultrasom - sistema escravo}
+
+A ultrassonografia é um método de diagnóstico muito recorrente na medicina moderna, pois se trata de um exame de baixo custo que não expõe o paciente à radiações ionizantes e exibe imagens em tempo real, o que torna este método extremamente eficiente para o estudo do funcionamento dos órgãos e o acompanhamento da gestação. Os aparelhos tradicionais operam em uma faixa de frequência de  2 a 10 MHz. As ondas são transmitidas a partir de um transdutor, o qual contém um cristal piezoelétrico. O transdutor também recebe os ecos gerados, transformando estes em sinais, que são interpretados por um computador para , em seguida, serem transmitidos por um display.
+
+Estima-se que o custo de um sistema de teleultrassom seja mais barato que deslocar uma equipe para um local que não conta com uma equipe médica especializada, pois um médico em qualquer lugar do mundo pode ter acesso ao exame via internet em tempo real, necessitando apenas de uma conexão de qualidade. Os demais componentes são exatamente iguais ao do ultrassom tradicional, tendo em conta que o projeto não visa modificar a ultrassonografia, apenas acresentar uma maneira de transmitir para onde o médico esteja.
+
+Com base nestas prerrogativas tanto o projeto final utilizará um sistema com transdutor ultrasônico de características similares ao ultrassom móvel kolplast, ultrassom portátil vendido e distribuido no mercado brasileiro. Link para acesso: http://loja.kolplast.com.br/eletromedicos/ultrassom-portatil
+
+
+\subsection{Módulo Eletrônico para o braço mecânico - sistema escravo}
+
+Utilizando como base as pesquisas realizadas a parte eletrônica do braço mecânico utilizará como sistema central de controle um microcontrolador PED. Ele calcula um erro como a diferença entre um ponto desejado e uma medida e aplica um correção baseada em termos proporcionais, integrais e derivativos. Os sinais recebidos serão processados em um arduino. Com PID e arduino, utilizando-se de um determinado algoritmo, é possível controlar a posição do motor.
+
+Com o microcontrolador é possível decodificar o sinal recebido e o transformar nas intruções que serão enviadas ao controlador do motor. A malha fechada permite que se conheça a posição atual do motor e atuar como definido pelo sinal recebido.
+Para controlar os atuadores é preciso drivers para fornecer a corrente necessária que o arduino não é capaz de fornecer. Os drivers a serem utilizados dependem de quantos e quais motores serão utilizados.
+
+Para a movimento do braço mecânico para o projeto completo e protótipo foi decidido a utilização de servomotores. O servomotor é uma máquina síncrona que contem um estator, que é a parte fixa, e um rotor, que é a parte movel. Como no motor elétrico o estator é bobinado, apesar de ter o estator bobinado o servomotor não pode ser ligado diretamente à rede pois utiliza uma bobinagem especial para proporcionar uma alta dinâmica ao sistema. O rotor é composto por imãs permanentes dispostos de forma linear sobre o ele e com um gerador de sinais chamado resolver instalado para fornecer sinais de velocidade e posição (INDRAMAT, 1997). 
+
+A escolha dos servomotores é devido sua alta precisão comparado aos motores de passo e motor de corrente alternada e a existência de vários modelos para implementação do protótipo utilizando o Arduino.
+
+
+\section{Conclusão}
+
+\paragraph{} A construção dos sistemas eletrônicos para atender o projeto de implementação de sistema telemédico para exames de ultrassom à distância foi divido em 4 subgrupos de pesquisa e trabalho. O primeiro grupo, que realiza o trabalho no módulo controlador, utiliza dos conceitos aprendidos nas matérias eletrônicas digitais e  processamento de sinais para implementação do sistema controlador utilizando giroscópio mostra a importância dessas matérias na formação do Engenheiro Eletrônico. O grupo seguinte, do módulo de transmissão e recepção dos sinais, os integrantes adquirem uma pequena experiência na importância das matérias de comunicação e mitigação de erros lógicos. O penúltimo grupo que se responsabilisa ao módulo de ultrassom, além de todos os integrantes da eletrônica, adquire um pouco de experiência de onde e como um Engenheiro Eletrônico atua na àrea da biomédica, uma das enfases do curso de Engenharia eletrônica da Unb. Por fim o grupo do módulo eletrônico do braço mecânico adquire conhecimento na àrea de movimentação utilizando arduino e servomotores. Como um todo o projeto é fundamental para mostrar, mesmo que brevemente, como um engenheiro eletrônico com experiência na biomédica atua e seus feitos em relação ao avanço de qualidade de vida da população como um todo. 
+
+\section{Referências}
+As referencias não serão citadas aqui explicitamente pois o também participo da confeccção utilizando latex e todas estão em um documento .bib
+
+\end{document}
