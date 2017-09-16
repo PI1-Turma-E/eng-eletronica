@@ -1,0 +1,113 @@
+\documentclass[a4paper]{article}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title{Requisitos Eletrônicos - Projeto Integrador 1 Turma E}
+\author{Tiago Rodrigues Pereira}
+\date{06/09/2017 - atualizado 16/09/2017} 
+
+\begin{document}
+
+\maketitle
+
+\section{Objetivo}
+
+\paragraph{} O objetivo deste documento é a definição dos requisitos básicos para o projeto relacionado à disciplina Projeto Integrador 1 - Turma E que envolve a criação de um sistema de ultrasom movimentado por um robô mecatrônico e controlado remotamente com dois sistemas: O sistema principal, onde o médico controla o robô, e o sistema escravo, onde existe um técnico que monta sistema de ultrasom robôtico e monitora o  decorrer do exame com ultrasom.
+
+\paragraph{} Cada um dos requisitos eletrônicos abaixo foram levantados buscam apresentar aos membros da equipe uma visão geral do que deve ser pesquisado e podem ser alterados no decorrer da pesquisa (me avisem que altero o documento).
+
+\section{Orientação}
+\paragraph{} Primeiramente todos os documentos, artigos, sites utilizados, imagems, gráficos, sinais divinos, etc, façam download ou citem no documento resumo indicando de onde veio aquela informação ou qual o nome do pdf que veio aquelas informações. 
+
+\paragraph{} Após as pesquisas realizadas façam um resumo do que foi pesquisado. Indique as vantagens, desvantagens, se é melhor ou pior que algum outro tipo de componente, porque , se existe atraso, qual é ele, ..., ou seja, que esteja relacionado ao tema que você está inserido e indiquem na bibliografia de onde veio aquela informação. 
+
+\paragraph{} Ao final crie um zip com todos os arquivos pesquisados e o resumo em um pdf e façam upload no \textbf{Github} (se não for possível enviem no \textbf{Slack} no channel da eletrônica)
+
+\paragraph{} Qualquer \textbf{dúvida} falem usando o \textbf{Slack} me enviando uma \textbf{mensagem privada} por lá.
+
+\paragraph{Prazo:} Entrega máxima até o dia \textbf{14/09/2017} (Quinta - Feira)
+
+\subparagraph{Observação 1:} Para evitar a criação de um efeito cascata, por favor, entregue até essa data pois ainda tenho que fazer um resumo de tudo (14 pessoas) e enviar para a gerente geral concatenar tudo e criar o nosso artigo final para o ponto de controle 1 que será entregue até o dia \textbf{20/09/2017}. Quem não entregar até esse dia irei fazer uma observação em sua avaliação final.
+
+\subparagraph{Observação 2:} Ao escrever a bibliografica, por favor, coloquem seguindo o modelo abaixo (facilita e muito quando for convetido para latex):\\
+\\
+  title={The texbook},\\
+  author={Knuth, D.E. and Bibby, D. and Makai, I.},\\
+  volume={1993},\\
+  year={1986},\\
+  publisher={Addison-Wesley}
+
+ 
+\section{Requisitos de eletrônica}
+\subsection{Módulo controlador - sistema principal}
+\paragraph{} O módulo controlador do sistema principal consiste em um módulo que irá controlar o robô eletromecânico.
+\paragraph{} Os integrantes devem pesquisar sobre o sistema que controla o robô, esteja conectado a um computador ou notebook, enviando os  sequintes comandos de movimento (considere a superfície de contato placa):
+\subparagraph{$\rightarrow$} Translação (cilíndrico) em relação ao eixo inicial do braço mecânico
+\subparagraph{$\rightarrow$} Nível, ou seja, mais alto ou mais baixo (aplicar mais pressão ou ajustar a altura para o exame médico)
+\subparagraph{$\rightarrow$} Esférico, ou seja, esse será o movimento de onde estará acoplado o sensor de ultrasom
+
+\paragraph{Integrantes:}
+\begin{itemize}
+\item Vitor Carvalho
+\item Matheus Carvalho
+\item Vitor Rangel
+\end{itemize}
+
+\subsection{Módulo de transmissão e recebimento de dados de movimento e imagem - transição entre os sistemas}
+\paragraph{} Neste módulo teremos como será transmitido os sinais advindos do movimento do robô, enviado pelo módulo controlador, e o recebimento dos dados de imagem do sensor de ultrasom. 
+
+\paragraph{} Os integrantes devem pesquisar métodos de transmissão de dados (hardware) que possam transmitir via internet à cabo, wifi e gsm (4g). Procurem também qual seria a confiabilidade de cada um desses métodos, delays, erros de transmissão e recebimento. Além de como ele iria se conectar a um notebook e como seria programado (linguagem apenas)
+
+\paragraph{Integrantes:}
+\begin{itemize}
+\item Pedro Lucas
+\item Anderson Sales
+\item Harolso Júnior
+\item Bruno Alves
+\end{itemize}
+
+\subsection{Módulo sensor ultrasom - sistema escravo}
+
+\paragraph{} Esse módulo, como o próprio nome diz, busca verificar no mercado os sensores de ultrasom disponíveis e como ocorre o seu funcionamento. 
+
+\paragraph{} Há ideia é que os integrantes pesquisem os sensores de ultrasom existentes no mercado, indicando:
+\subparagraph{$\rightarrow$} Funcionamento;
+\subparagraph{$\rightarrow$} Preço; 
+\subparagraph{$\rightarrow$} Quais tipos de imagem ele transmite; 
+\subparagraph{$\rightarrow$} Taxa de atualização;
+ resolução
+\subparagraph{$\rightarrow$} Todos os tipos de sinais que ele transmite; 
+\subparagraph{$\rightarrow$} Especificações energéticas e de tempetura que pode ser trabalhada;
+\subparagraph{$\rightarrow$} Quais são os tipos de sinais (entradas no sensor em si) para ativação das suas várias funcionalidades.
+
+\paragraph{}Indicar qual seria a vantagem e desvantagens entre os sensores pesquisados. Não se esqueçam, nós não iremos criar do zero um sensor de ultrasom, iremos utilizar os já existentes no mercado.
+
+\paragraph{Integrantes:}
+\begin{itemize}
+\item Pedro Henrique
+\item Tiago Pereira (Gerente)
+\item Marcos Lima
+\end{itemize}
+
+\subsection{Módulo Eletrônico para o braço mecânico - sistema escravo}
+
+\paragraph{} Neste módulo temos como objetivo fazer toda a pesquisa por trás da utilização de motores de passo, atuadores, circuito geral eletrônico de controle, ..., para o braço mecâtrônico que movimentará o sensor de ultrasom
+
+\paragraph{} Os integrantes devem pesquisar is sequintes tópicos: 
+\subparagraph{$\rightarrow$} Atuadores, motores de passo, servomotores (funcionamento, melhor aplicabilidade, comparativo);
+\subparagraph{$\rightarrow$} "Robô manipulador esférico" (onde será encaixado o sensor de ultrasom) e seu funcionamento; 
+\subparagraph{$\rightarrow$} Métodos para controlar os motores, como fpgas, arduino, etc. Eles receber os sinais de movimento advindos do módulo controlador, processar e transmitir para cada um dos dispositivos de movimento (motores);
+
+\paragraph{} Façam uma pesquisa voltada para um nível onde pode ser implementado, a ideia é que o protótipo seja o braço mecânico se movimentando a partir de um controle remoto;
+
+\paragraph{Integrantes:}
+\begin{itemize}
+\item Filipe de souza 
+\item Marcelo Magalhaes
+\item Vinicius Z de Oliveira
+\item Bruno Souza
+\end{itemize}
+
+\end{document}
