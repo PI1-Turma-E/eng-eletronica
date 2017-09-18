@@ -5,41 +5,32 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[Arruda 2007]{arruda2007}
-\abntrefinfo{Arruda}{ARRUDA}{2007}
-{ARRUDA, M. B.~B. Como fazer referências: bibliográficas, eletrônicas e
-  demais formas de documentos.
-2007.
-Dispon{\'\i}vel em: \url{http://bu.ufsc.br/framerefer.html}.}
+\bibitem[ANEEL 2015]{aneel1}
+\abntrefinfo{ANEEL}{ANEEL}{2015}
+{ANEEL. \emph{Programa de Eficiência Energética}. 2015. Disponível
+  em:\url{http://www.aneel.gov.br/programa-eficiencia-energetica}.
+Acessado em: 12/09/2017.}
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2000]{NBR6034:2000}
-\abntrefinfo{ABNT}{ABNT}{2000}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- referências.
-Rio de Janeiro, 2000.}
+\bibitem[Christie]{djangoframe}
+\abntrefinfo{Christie}{CHRISTIE}{}
+{CHRISTIE, T. \emph{Django REST Framework}.
+Dispon{\'\i}vel em: \url{http://www.django-rest-framework.org/}.}
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2011]{NBR14724:2011}
-\abntrefinfo{ABNT}{ABNT}{2011}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
-  apresenta{\c c}\~ao.
-Rio de Janeiro, 2011. 15~p.}
+\bibitem[Dargan 2015]{ultrasom2}
+\abntrefinfo{Dargan}{DARGAN}{2015}
+{DARGAN, R.~S. \emph{Telerobotic Ultrasound May Revolutionize Telemedicine}.
+  2015. Http://www.rsna.org/News.aspx?id=17929/.}
 
-\bibitem[Bordalo, Ferziger e Kline 1989]{bordalo1989}
-\abntrefinfo{Bordalo, Ferziger e Kline}{BORDALO; FERZIGER; KLINE}{1989}
-{BORDALO, S.~N.; FERZIGER, J.~H.; KLINE, S.~J. The development of zonal models
-  for turbulence. In:  \emph{Proceedings of the 10th Brazilian Congress of
-  Mechanical Engineering}. [S.l.: s.n.], 1989. v.~1, p. 41--44.}
+\bibitem[FANUC 1998]{fanuc}
+\abntrefinfo{FANUC}{FANUC}{1998}
+{FANUC. \emph{Servo Motor}.
+[S.l.], 1998.}
 
-\bibitem[Clark 1986]{clark1986}
-\abntrefinfo{Clark}{CLARK}{1986}
-{CLARK, J.~A. Private communication.
-University of Michigan, 1986.}
-
-\bibitem[Coimbra 1978]{coimbra1978}
-\abntrefinfo{Coimbra}{COIMBRA}{1978}
-{COIMBRA, A.~L. Lessons of continuum mechanics.
-São Paulo, Brazil, p.~428, 1978.}
+\bibitem[FITZGERALD A. E.; KINGSLEY~JR. 1975-1978]{maquinasele}
+\abntrefinfo{FITZGERALD A. E.; KINGSLEY~JR.}{FITZGERALD A. E.;
+  KINGSLEY~JR.}{1975-1978}
+{FITZGERALD A. E.; KINGSLEY~JR., C.~A. \emph{Maquinas elétricas}. São Paulo:
+  McGraw-Hill, 1975--1978.}
 
 \bibitem[INMETRO 2013]{inmetro2003}
 \abntrefinfo{INMETRO}{INMETRO}{2013}
@@ -47,16 +38,48 @@ São Paulo, Brazil, p.~428, 1978.}
   metrologia}.
 Rio de Janeiro, Brasil, 2013. 75~p.}
 
-\bibitem[Soviero e Lavagna 1997]{soviero1997}
-\abntrefinfo{Soviero e Lavagna}{SOVIERO; LAVAGNA}{1997}
-{SOVIERO, P. A.~O.; LAVAGNA, L. G.~M. A numerical model for thin airfoils in
-  unsteady motion. In:  \emph{Journal of the Brazilian Societyt Mechanical
-  Sciences}. [S.l.: s.n.], 1997. v.~19, n.~3, p. 332--340.}
+\bibitem[Mathiassen et al. 2016]{mathiassen-frontiers2016}
+\abntrefinfo{Mathiassen et al.}{MATHIASSEN et al.}{2016}
+{MATHIASSEN, K. et al. An ultrasound robotic system using the commercial robot
+  {UR5}.
+\emph{Frontiers in Robotics and AI}, v.~3, n.~1, 2016.
+ISSN 2296-9144.}
 
-\bibitem[Sparrow 1980]{sparrow1980}
-\abntrefinfo{Sparrow}{SPARROW}{1980}
-{SPARROW, E.~M. Forced convection heat transfer in a duct having
-  spanwise-periodic rectangular protuberances. In:  \emph{Numerical Heat
-  Transfer}. [S.l.: s.n.], 1980. v.~3, p. 149--167.}
+\bibitem[Moreto 2007]{moreto2007controle}
+\abntrefinfo{Moreto}{MORETO}{2007}
+{MORETO, M. Controle de servomotor.
+2007.}
+
+\bibitem[Nunes 2015]{bracomec}
+\abntrefinfo{Nunes}{NUNES}{2015}
+{NUNES, L.~F. de O.~M.
+\emph{Projeto e fabricação de um braço mecânico para ultrassom médico}.
+Disserta\c{c}\~{a}o (Projeto de graduação) --- UFRJ/ESCOLA POLITÉCNICA, Rio
+  de Janeiro, Brasil, 2015.}
+
+\bibitem[Philips]{ultrasom1}
+\abntrefinfo{Philips}{PHILIPS}{}
+{PHILIPS. \emph{CX50 xMATRIX Ultrassom Portátil}. Disponível em:
+  \url{https://www.philips.com.br/healthcare/product/HC795076/sistema-de-ultrassom-compactxtreme-cx50.html}.
+Acessado em: 10/09/2017.}
+
+\bibitem[Pierrot et al. 1999]{pierrot1999hippocrate}
+\abntrefinfo{Pierrot et al.}{PIERROT et al.}{1999}
+{PIERROT, F. et al. Hippocrate: A safe robot arm for medical applications with
+  force feedback.
+\emph{Medical image analysis}, Elsevier, v.~3, n.~3, p. 285--300, 1999.}
+
+\bibitem[Santos Marília C.~Batista 2015]{santos1}
+\abntrefinfo{Santos Marília C.~Batista}{SANTOS MARíLIA C.~BATISTA}{2015}
+{SANTOS MARíLIA C.~BATISTA, S. A. P. L. S.~R. T.~S. \emph{Análise da
+  eficiência energética, ambiental e econômica entre lâmpadas de LED e
+  convencionais}.
+[S.l.], 2015.}
+
+\bibitem[Solar]{portalsol1}
+\abntrefinfo{Solar}{SOLAR}{}
+{SOLAR, P. \emph{TIPOS DE PAINEL SOLAR FOTOVOLTAICO}. Disponível em:
+  \url{http://www.portalsolar.com.br/tipos-de-painel-solar-fotovoltaico.html}.
+Acessado em: 12/09/2017.}
 
 \end{thebibliography}
